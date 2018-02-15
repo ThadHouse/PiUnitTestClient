@@ -1,0 +1,5 @@
+build/
+*.swp
+.idea
+BuilldNew/
+install_test_app/build/
