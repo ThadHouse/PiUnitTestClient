@@ -54,6 +54,7 @@
               "C:\\usr\\arm-linux-gnueabi\\include\\linux",
               "C:\\usr\\arm-linux-gnueabi\\include\\c++\\5\\tr1",
               "${workspaceRoot}/libraries/ntcore/ntcore/src/main/native/include",
+              "${workspaceRoot}/testclient/include",
               "${workspaceRoot}/libraries/wpiutil/wpiutil/src/main/native/include"
           ],
           "defines": [
