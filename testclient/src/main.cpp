@@ -1,7 +1,8 @@
 #include "ntcore.h"
-#include "CANClient.h"
+#include "CANMap.h"
 
 int main() {
+  getCANMap();
   auto val = NT_GetDefaultInstance();
   (void)val;
 }

@@ -10,6 +10,7 @@
 #include <chrono>
 #include "llvm/raw_ostream.h"
 #include "llvm/SmallVector.h"
+#include "support/timestamp.h"
 
 enum cfl_mode {
 	CFL_NO_BITSTUFFING, /* plain bit calculation without bitstuffing */
@@ -163,6 +164,8 @@ void CANController::readThreadMain() {
                   }
 
                   newData.length = frame_rd.can_dlc;
+
+                  newData.timestamp = wpi::Now();
 
                   m_incoming.emplace(newData);
 

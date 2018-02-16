@@ -9,6 +9,7 @@ struct CANData {
   int32_t id;
   uint8_t length;
   uint8_t data[8];
+  uint64_t timestamp;
 };
 
 class CANController {
